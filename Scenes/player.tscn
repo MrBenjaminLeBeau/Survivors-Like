@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://46778uk6wn7s"]
+
+[ext_resource type="Texture2D" uid="uid://ckkrycmv4aya" path="res://Graphics/unit_select_outline.png" id="1_8ojtn"]
+[ext_resource type="PackedScene" uid="uid://ftb4ohcongtb" path="res://Scenes/player_slime.tscn" id="2_o5jwn"]
+
+[node name="Player" type="Node2D"]
+
+[node name="Unit 1" type="Sprite2D" parent="."]
+texture = ExtResource("1_8ojtn")
+
+[node name="PlayerSlime" parent="Unit 1" instance=ExtResource("2_o5jwn")]
+position = Vector2(-16, -16)
+
+[node name="PlayerSlime2" parent="Unit 1" instance=ExtResource("2_o5jwn")]
+position = Vector2(16, -16)
+
+[node name="PlayerSlime3" parent="Unit 1" instance=ExtResource("2_o5jwn")]
+position = Vector2(-16, 16)
+
+[node name="PlayerSlime4" parent="Unit 1" instance=ExtResource("2_o5jwn")]
+position = Vector2(16, 16)
+
+[node name="Unit 2" type="Sprite2D" parent="."]
+position = Vector2(64, 0)
+texture = ExtResource("1_8ojtn")
+
+[node name="Unit 3" type="Sprite2D" parent="."]
+position = Vector2(0, 64)
+texture = ExtResource("1_8ojtn")
+
+[node name="Unit 4" type="Sprite2D" parent="."]
+position = Vector2(64, 64)
+texture = ExtResource("1_8ojtn")

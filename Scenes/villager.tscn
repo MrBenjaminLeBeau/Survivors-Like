@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://djkeq6p3136t4"]
+
+[ext_resource type="Script" path="res://Scripts/villager.gd" id="1_jo6vv"]
+[ext_resource type="Texture2D" uid="uid://bwdb8hb7ep15d" path="res://Graphics/Villager.png" id="2_rfwtw"]
+[ext_resource type="PackedScene" uid="uid://kh37k3kjv2t2" path="res://Scenes/hurt_box.tscn" id="3_rta58"]
+[ext_resource type="PackedScene" uid="uid://dno8j5abeyfil" path="res://Scenes/hit_box.tscn" id="4_sipan"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w4i86"]
+size = Vector2(18, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qbk2h"]
+size = Vector2(32, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pqaf"]
+size = Vector2(22, 54)
+
+[node name="Villager" type="CharacterBody2D"]
+collision_layer = 5
+collision_mask = 5
+motion_mode = 1
+platform_on_leave = 2
+script = ExtResource("1_jo6vv")
+
+[node name="Villager" type="Sprite2D" parent="."]
+texture = ExtResource("2_rfwtw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_w4i86")
+
+[node name="HurtBox" parent="." instance=ExtResource("3_rta58")]
+collision_mask = 4
+
+[node name="CollisionShape2D" parent="HurtBox" index="0"]
+visible = false
+shape = SubResource("RectangleShape2D_qbk2h")
+
+[node name="HitBox" parent="." instance=ExtResource("4_sipan")]
+collision_layer = 2
+
+[node name="CollisionShape2D" parent="HitBox" index="0"]
+shape = SubResource("RectangleShape2D_6pqaf")
+
+[connection signal="hurt" from="HurtBox" to="." method="_on_hurt_box_hurt"]
+
+[editable path="HurtBox"]
+[editable path="HitBox"]

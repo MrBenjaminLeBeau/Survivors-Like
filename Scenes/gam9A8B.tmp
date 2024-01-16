@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://dc1bfennu4alo"]
+
+[ext_resource type="Script" path="res://Scripts/game.gd" id="1_1e8cu"]
+[ext_resource type="PackedScene" uid="uid://ftb4ohcongtb" path="res://Scenes/player_slime.tscn" id="1_kupan"]
+[ext_resource type="PackedScene" uid="uid://djkeq6p3136t4" path="res://Scenes/villager.tscn" id="2_csg2c"]
+
+[sub_resource type="Curve2D" id="Curve2D_7xrl8"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -101, -73, 0, 0, 0, 0, 1999, -75, 0, 0, 0, 0, 2003, 1141, 0, 0, 0, 0, -105, 1149, 0, 0, 0, 0, -99, -73)
+}
+point_count = 5
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_1e8cu")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayerSlime" parent="." instance=ExtResource("1_kupan")]
+position = Vector2(577, 326)
+
+[node name="Villager" parent="." instance=ExtResource("2_csg2c")]
+position = Vector2(312, 156)
+
+[node name="VillageSpawnTimer" type="Timer" parent="."]
+
+[node name="VillageSpawnPath" type="Path2D" parent="."]
+curve = SubResource("Curve2D_7xrl8")
+
+[connection signal="timeout" from="VillageSpawnTimer" to="." method="_on_village_spawn_timer_timeout"]

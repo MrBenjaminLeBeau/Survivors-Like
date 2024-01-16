@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://b73myoeuq814l"]
+
+[ext_resource type="Texture2D" uid="uid://nthctb5kk22g" path="res://Graphics/Slimeball.png" id="1_1qkk7"]
+[ext_resource type="Script" path="res://Scripts/item_option.gd" id="1_gxlmw"]
+
+[node name="ItemOption" type="Button"]
+custom_minimum_size = Vector2(350, 50)
+offset_right = 350.0
+offset_bottom = 50.0
+script = ExtResource("1_gxlmw")
+
+[node name="Background" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(350, 50)
+layout_mode = 0
+offset_right = 350.0
+offset_bottom = 50.0
+mouse_filter = 1
+color = Color(0.396078, 0.396078, 0.396078, 1)
+
+[node name="Picture" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 42.0
+offset_bottom = 42.0
+mouse_filter = 1
+color = Color(0, 0, 0, 1)
+
+[node name="ItemIcon" type="TextureRect" parent="Picture"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_1qkk7")
+
+[node name="NameLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 50.0
+offset_right = 97.0
+offset_bottom = 26.0
+mouse_filter = 1
+text = "Name"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DescriptionLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 20.0
+offset_right = 336.0
+offset_bottom = 46.0
+mouse_filter = 1
+theme_override_font_sizes/font_size = 10
+text = "Description of Item"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="LevelLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 280.0
+offset_right = 338.0
+offset_bottom = 26.0
+mouse_filter = 1
+text = "Level: 1"
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
