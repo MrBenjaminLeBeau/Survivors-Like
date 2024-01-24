@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dc1bfennu4alo"]
+[gd_scene load_steps=6 format=3 uid="uid://dc1bfennu4alo"]
 
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_1e8cu"]
 [ext_resource type="PackedScene" uid="uid://ftb4ohcongtb" path="res://Scenes/player_slime.tscn" id="1_kupan"]
 [ext_resource type="PackedScene" uid="uid://cjr3daqti6p17" path="res://Scenes/enemy_spawner.tscn" id="4_lduvm"]
 [ext_resource type="PackedScene" uid="uid://b4cqbc2rkuw85" path="res://Scenes/gui_layer.tscn" id="4_xbyk8"]
+[ext_resource type="PackedScene" uid="uid://5dk30v44l45w" path="res://Scenes/player_bat.tscn" id="5_jc7ad"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_1e8cu")
@@ -57,6 +58,9 @@ offset_right = 964.0
 
 [node name="LevelUp" parent="GUILayer" index="1"]
 visible = false
+
+[node name="PlayerBat" parent="." instance=ExtResource("5_jc7ad")]
+position = Vector2(696, 338)
 
 [connection signal="health_depleted" from="PlayerSlime" to="." method="_on_player_slime_health_depleted"]
 

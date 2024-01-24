@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://5dk30v44l45w"]
+
+[ext_resource type="Texture2D" uid="uid://7tdm7abc2nnm" path="res://Graphics/bat.png" id="1_h1eha"]
+[ext_resource type="Script" path="res://Scripts/player_bat.gd" id="1_sqgju"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r86pm"]
+radius = 7.0
+
+[node name="PlayerBat" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_sqgju")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_h1eha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_r86pm")
+
+[node name="ShootingPoint" type="Marker2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

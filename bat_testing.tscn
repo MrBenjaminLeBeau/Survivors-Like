@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://u4ctge7tugl6"]
+
+[ext_resource type="PackedScene" uid="uid://5dk30v44l45w" path="res://Scenes/player_bat.tscn" id="1_jjvd0"]
+
+[node name="BatTesting" type="Node2D"]
+
+[node name="PlayerBat" parent="." instance=ExtResource("1_jjvd0")]
+position = Vector2(918, 519)

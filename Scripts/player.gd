@@ -6,8 +6,6 @@ var health = 100.0
 
 
 func _physics_process(delta):
-	
-
 	const DAMAGE_RATE = 500.0
 	var overlapping_mobs = %HitBox.get_overlapping_bodies()
 	
