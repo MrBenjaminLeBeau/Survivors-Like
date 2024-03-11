@@ -1,10 +1,8 @@
-res://Scenes/bat_projectile.tscn
-res://Scenes/bat_projectile.gd
 res://Scenes/game.tscn
 res://Scenes/player_slime.tscn
 res://Scenes/player_bat.tscn
 res://Scenes/slimeball.tscn
+res://Scenes/bat_projectile.tscn
 res://Scenes/player.tscn
 res://Scenes/villager.tscn
-res://Scripts/player_bat.gd
 res://bat_testing.tscn

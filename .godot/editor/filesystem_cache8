@@ -1,5 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706004891
+::res://::1710158182
+bat_testing.tscn::PackedScene::1463799514497543037::1706018333::0::1::::<><>::uid://5dk30v44l45w::::res://Scenes/player_bat.tscn
 ::res://Graphics/::1705919604
 Arrow.png::CompressedTexture2D::3848551152884398116::1705138117::1705138128::1::::<><>::
 bat.png::CompressedTexture2D::2285471435045719570::1705919598::1705919604::1::::<><>::
@@ -13,24 +14,24 @@ xp_background.png::CompressedTexture2D::6431723394311925964::1705145697::1705145
 xp_full.png::CompressedTexture2D::1793779973527561835::1705144897::1705144903::1::::<><>::
 ::res://Graphics/Upgrade Icons/::1705210644
 ::res://Graphics/Weapon Icons/::1705210701
-::res://Scenes/::1705927692
+::res://Scenes/::1706018333
 arrow.tscn::PackedScene::2875694603387012645::1705246450::0::1::::<><>::uid://bu3jcs67xjep5
-bat_projectile.gd::GDScript::-1::1705927692::0::1::::<>Area2D<>::
-bat_projectile.tscn::PackedScene::1522326486114297690::1705927692::0::1::::<><>::res://Scenes/bat_projectile.gd<>uid://7tdm7abc2nnm::::res://Graphics/bat.png
+bat_projectile.gd::GDScript::-1::1706017934::0::1::::<>Area2D<>::
+bat_projectile.tscn::PackedScene::1522326486114297690::1706018333::0::1::::<><>::res://Scenes/bat_projectile.gd<>uid://7tdm7abc2nnm::::res://Graphics/bat.png
 enemy_spawner.tscn::PackedScene::5441340840718756520::1705927692::0::1::::<><>::res://Scripts/enemy_spawner.gd<>uid://djkeq6p3136t4::::res://Scenes/villager.tscn<>res://Scripts/spawn_info.gd
-game.tscn::PackedScene::7353383436717598476::1705927692::0::1::::<><>::res://Scripts/game.gd<>uid://ftb4ohcongtb::::res://Scenes/player_slime.tscn<>uid://cjr3daqti6p17::::res://Scenes/enemy_spawner.tscn<>uid://b4cqbc2rkuw85::::res://Scenes/gui_layer.tscn<>uid://5dk30v44l45w::::res://Scenes/player_bat.tscn
+game.tscn::PackedScene::7353383436717598476::1706018333::0::1::::<><>::res://Scripts/game.gd<>uid://ftb4ohcongtb::::res://Scenes/player_slime.tscn<>uid://cjr3daqti6p17::::res://Scenes/enemy_spawner.tscn<>uid://b4cqbc2rkuw85::::res://Scenes/gui_layer.tscn<>uid://5dk30v44l45w::::res://Scenes/player_bat.tscn
 gui_layer.tscn::PackedScene::4426999309925325816::1705927692::0::1::::<><>::uid://cxvtsrtwljdf5::::res://Graphics/xp_background.png<>uid://0s6j875lsfct::::res://Graphics/xp_full.png
 hit_box.tscn::PackedScene::8102639615589232847::1705205374::0::1::::<><>::res://Scripts/hit_box.gd
 hurt_box.tscn::PackedScene::718096870816423557::1705205374::0::1::::<><>::res://Scripts/hurt_box.gd
 item_option.tscn::PackedScene::4691038462628263765::1705927692::0::1::::<><>::uid://nthctb5kk22g::::res://Graphics/Slimeball.png<>res://Scripts/item_option.gd
-player.tscn::PackedScene::2101474029715580262::1705927692::0::1::::<><>::uid://ckkrycmv4aya::::res://Graphics/unit_select_outline.png<>uid://ftb4ohcongtb::::res://Scenes/player_slime.tscn
-player_bat.tscn::PackedScene::2112516961441646862::1705927692::0::1::::<><>::uid://7tdm7abc2nnm::::res://Graphics/bat.png<>res://Scripts/player_bat.gd
-player_slime.tscn::PackedScene::390280646783937127::1705927692::0::1::::<><>::uid://bxautcbj6nubj::::res://Graphics/Slime.png<>res://Scripts/player_slime.gd<>uid://kh37k3kjv2t2::::res://Scenes/hurt_box.tscn
-slimeball.tscn::PackedScene::4962637680276833674::1705927692::0::1::::<><>::res://Scripts/slimeball.gd<>uid://nthctb5kk22g::::res://Graphics/Slimeball.png
+player.tscn::PackedScene::2101474029715580262::1706018333::0::1::::<><>::uid://ckkrycmv4aya::::res://Graphics/unit_select_outline.png<>uid://ftb4ohcongtb::::res://Scenes/player_slime.tscn
+player_bat.tscn::PackedScene::2112516961441646862::1706018333::0::1::::<><>::uid://7tdm7abc2nnm::::res://Graphics/bat.png<>res://Scripts/player_bat.gd
+player_slime.tscn::PackedScene::390280646783937127::1706018333::0::1::::<><>::uid://bxautcbj6nubj::::res://Graphics/Slime.png<>res://Scripts/player_slime.gd<>uid://kh37k3kjv2t2::::res://Scenes/hurt_box.tscn
+slimeball.tscn::PackedScene::4962637680276833674::1706018333::0::1::::<><>::res://Scripts/slimeball.gd<>uid://nthctb5kk22g::::res://Graphics/Slimeball.png
 upgrade_data_base.tscn::PackedScene::7601791034521127738::1705927692::0::1::::<><>::res://Scripts/upgrade_data_base.gd
-villager.tscn::PackedScene::7811878514739730911::1705205374::0::1::::<><>::res://Scripts/villager.gd<>uid://bwdb8hb7ep15d
+villager.tscn::PackedScene::7811878514739730911::1706018333::0::1::::<><>::res://Scripts/villager.gd<>uid://bwdb8hb7ep15d::::res://Graphics/Villager.png<>uid://kh37k3kjv2t2::::res://Scenes/hurt_box.tscn<>uid://dno8j5abeyfil::::res://Scenes/hit_box.tscn
 xp.tscn::PackedScene::5672613574183846847::1705927692::0::1::::<><>::res://Scripts/xp_orb.gd<>uid://dpdifbv5hcld0::::res://Graphics/XP Circle.png
-::res://Scripts/::1705927459
+::res://Scripts/::1706018333
 arrow.gd::GDScript::-1::1705161670::0::1::::<>Area2D<>::
 enemy_spawner.gd::GDScript::-1::1705135341::0::1::::<>Node2D<>::
 game.gd::GDScript::-1::1705134132::0::1::::<>Node2D<>::
@@ -38,7 +39,7 @@ hit_box.gd::GDScript::-1::1705130221::0::1::::<>Area2D<>::
 hurt_box.gd::GDScript::-1::1705141025::0::1::::<>Area2D<>::
 item_option.gd::GDScript::-1::1705214594::0::1::::<>Button<>::
 player.gd::GDScript::-1::1705834251::0::1::::<>CharacterBody2D<>::
-player_bat.gd::GDScript::-1::1705927459::0::1::::<>CharacterBody2D<>::
+player_bat.gd::GDScript::-1::1706018333::0::1::::<>CharacterBody2D<>::
 player_slime.gd::GDScript::-1::1705246448::0::1::::<>CharacterBody2D<>::
 slimeball.gd::GDScript::-1::1705238819::0::1::::<>Area2D<>::
 spawn_info.gd::GDScript::-1::1705132801::0::1::::Spawn_Info<>Resource<>::
